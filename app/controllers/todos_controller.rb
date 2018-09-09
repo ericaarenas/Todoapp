@@ -29,7 +29,9 @@ class TodosController < ApplicationController
       render 'edit'
     end     
   end
-  
+  def index
+    @todos = Todo.all
+  end
   
   private 
   #Todo lo que ponga a partír de "private" SOLO será usado por este controller
